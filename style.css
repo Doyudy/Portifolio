@@ -196,7 +196,7 @@ span {
 }
 
 .typing-text span::before {
-    content: "Desenvolvedor";
+    content: "Fullstack";
     color: #b74b4b;
     animation: words 20s infinite;
 }
@@ -220,7 +220,7 @@ span {
 
 @keyframes words {
     0%, 20% {
-        content: "FullStack";
+        content: "Desenvolvedor";
    }
 }
 
