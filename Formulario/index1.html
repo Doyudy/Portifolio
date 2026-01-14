@@ -7,20 +7,25 @@
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-    <section>
-        <h2>Contato</h2>
-        <form id="contactForm" action="https://api.staticforms.xyz/submit" method="post">
-           <label>Nome</label>
-            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
-            <label>Email</label>
-            <input type="text" name="email" placeholder="Digite seu email" autocomplete="off" required>
-            <label>Menssagem</label>
-            <textarea name="message" cols="30" rows="10" placeholder="Digite sua menssagem" required></textarea>
-            <button type="subit">Enviar</button>
 
-            <input type="hidden" name="accessKey" value="fea00612-daae-4974-84a1-479d35c03fa5">      
-        </form>
-    </section>
+<section>
+    <h2>Contato</h2>
+
+    <form id="contactForm">
+        <label>Nome</label>
+        <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+
+        <label>Mensagem</label>
+        <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+
+        <button type="submit">Enviar</button>
+
+        <input type="hidden" name="accessKey" value="fea00612-daae-4974-84a1-479d35c03fa5">
+    </form>
+</section>
 
 <script>
   const form = document.getElementById("contactForm");
@@ -37,7 +42,8 @@
       });
 
       if (response.ok) {
-        window.location.href = "index2.html";
+
+        window.location.href = "Obrigado.html";
       } else {
         alert("Erro ao enviar o formulário.");
       }
@@ -47,9 +53,5 @@
   });
 </script>
 
-
 </body>
 </html>
-
-
-
