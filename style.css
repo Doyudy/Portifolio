@@ -196,7 +196,7 @@ span {
 }
 
 .typing-text span::before {
-    content: "FullStack";
+    content: "Frontend";
     color: #b74b4b;
     animation: words 7s infinite;
 }
@@ -248,4 +248,5 @@ span {
         width: 70vh;
         margin-top: 4rem;
     }
+
 }
